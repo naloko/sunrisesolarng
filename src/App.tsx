@@ -21,6 +21,7 @@ const Projects = lazy(() => import("./pages/Projects"));
 const Services = lazy(() => import("./pages/Services"));
 const Residential = lazy(() => import("./pages/services/Residential"));
 const Commercial = lazy(() => import("./pages/services/Commercial"));
+const ProductDetail = lazy(() => import("./pages/ProductDetail"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Simple loading component
@@ -56,6 +57,7 @@ const App = () => (
             <Route path="/services" element={<Services />} />
             <Route path="/services/residential" element={<Residential />} />
             <Route path="/services/commercial" element={<Commercial />} />
+            <Route path="/products/:categorySlug/:productSlug" element={<ProductDetail />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

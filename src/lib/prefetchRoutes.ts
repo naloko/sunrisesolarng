@@ -14,5 +14,8 @@ export const prefetchRoute = (path: string) => {
   if (loader) {
     // Fire and forget – leverage browser module cache
     loader();
+  } else if (path.startsWith('/products/')) {
+    // Handle dynamic product detail routes
+    import('@/pages/ProductDetail');
   }
 };

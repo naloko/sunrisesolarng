@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 import SEO from '../components/SEO';
-import FeaturedProductsCarousel from '../components/products/FeaturedProductsCarousel';
-import ProductGallery from '../components/products/ProductGallery';
-import { BROCHURES } from '../config/brochures';
+import ProductsByCategoryRow from '../components/products/ProductsByCategoryRow';
+import { PRODUCT_CATALOG } from '../config/productCatalog';
 
 const Products = () => {
   return (
@@ -38,17 +37,22 @@ const Products = () => {
         </div>
       </section>
 
-      {/* Featured Products */}
+      {/* Products by Category */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <div className="section-header">
-              <h2 className="section-heading">Featured Products</h2>
-              <p className="section-description mx-auto">Our top sellers: water heaters, solar panels, inverters and storage.</p>
+              <h2 className="section-heading">Our Products</h2>
+              <p className="section-description mx-auto">Explore our comprehensive range of solar energy solutions.</p>
             </div>
           </AnimatedSection>
-
-          <FeaturedProductsCarousel />
+        </div>
+        
+        {/* Product Categories */}
+        <div className="divide-y divide-gray-100">
+          {PRODUCT_CATALOG.map((category) => (
+            <ProductsByCategoryRow key={category.id} category={category} />
+          ))}
         </div>
       </section>
 
