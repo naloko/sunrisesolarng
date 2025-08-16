@@ -52,66 +52,6 @@ const Products = () => {
         </div>
       </section>
 
-      {/* Interactive Gallery */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <div className="section-header">
-              <h2 className="section-heading">Interactive Gallery</h2>
-              <p className="section-description mx-auto">Peek inside our storage systems and explore solar water heater models.</p>
-            </div>
-          </AnimatedSection>
-
-          <ProductGallery
-            images={[
-              { src: '/lovable-uploads/579a7101-0f7b-4c0b-8772-8715b1a7c158.png', alt: 'Energy storage container interior – open doors' },
-              { src: '/lovable-uploads/176c34c4-5b29-434d-94f5-8c24b2b0fe60.png', alt: 'Energy storage container modules and control cabinets' },
-              { src: '/lovable-uploads/0c5b8a28-c3b5-4315-91fa-2059a4997db3.png', alt: 'Top‑down view of containerized storage layout' },
-              { src: '/lovable-uploads/832433c8-6f7e-4a3e-a7d7-f6b316f7fb3f.png', alt: 'Technician assembling battery storage racks in factory' },
-              { src: '/lovable-uploads/3ed17f49-1606-4c6f-a582-030043e0bb84.png', alt: 'Overview of solar water heater product family' },
-              { src: '/lovable-uploads/339dcac6-b76f-4741-bb0b-d9590c0bb3c4.png', alt: 'Heat pipe solar collector spec sheet' },
-              { src: '/lovable-uploads/e87b0368-ea97-42d2-823b-79f4156987ff.png', alt: 'Compact flat plate solar water heater brochure page' },
-              { src: '/lovable-uploads/401284b2-78cf-4942-9b20-4f17d91fe6e5.png', alt: 'Compact non‑pressure solar water heater brochure page' },
-              { src: '/lovable-uploads/96f49ca6-964a-48a3-baec-0c2f5942be26.png', alt: 'Compact pressurized heat pipe solar water heater brochure page' },
-              { src: '/lovable-uploads/2383ed8e-d178-4154-91e7-ea0776ce6b6a.png', alt: 'Preheated solar water heater brochure page' },
-              // New battery & inverter datasheets
-              { src: '/lovable-uploads/4620eef3-4a50-4dc2-9d76-7fdd6aa697f5.png', alt: 'Wall‑mounted battery datasheet and specs' },
-              { src: '/lovable-uploads/f49a71ac-ce40-4a76-b2e1-a9624f5b3cbf.png', alt: 'Rack battery module datasheet and specs' },
-              { src: '/lovable-uploads/aa758644-54d4-4554-8b94-a1b372543533.png', alt: 'Floor battery cabinet datasheet' },
-              { src: '/lovable-uploads/0364870b-1c7b-4a6d-9cfd-63e4eb6c34b9.png', alt: 'Stacked battery energy system specs' },
-              { src: '/lovable-uploads/bf98f41e-a630-44e1-94c3-77fc6d1048a5.png', alt: 'All‑in‑one home energy system datasheet' },
-              { src: '/lovable-uploads/7c99b5ba-6241-4f7f-9b95-ff1a916d5840.png', alt: 'Modular stacked home energy system datasheet' },
-              { src: '/lovable-uploads/c059f602-666e-4344-b8c5-ad6193861b51.png', alt: 'Hybrid inverter datasheet' },
-              { src: '/lovable-uploads/f26742d5-1825-4c2e-9c5e-085cdca250cc.png', alt: 'Hybrid inverter with LCD interface datasheet' },
-              { src: '/lovable-uploads/20c63626-d4f3-47c8-abda-8400821cbf0a.png', alt: 'Stackable battery system datasheet' },
-              // Newly added: panels & heater photos
-              { src: '/lovable-uploads/4b4b213b-0bf5-498f-8dbd-a3e86aef308f.png', alt: 'Solar panel module front view' },
-              { src: '/lovable-uploads/1d4fdc53-b574-4cf5-8bc8-93536f84711b.png', alt: 'Rooftop solar panel array installation' },
-              { src: '/lovable-uploads/fa574ee8-f575-4238-aa13-e2b4a0bd6425.png', alt: 'Compact non‑pressure solar water heater units' },
-            ]}
-          />
-
-          {/* Brochures CTA */}
-          <div className="mt-12">
-            <div className="section-header">
-              <h2 className="section-heading">Brochures & Specs</h2>
-              <p className="section-description mx-auto">Download detailed brochures for offline review.</p>
-            </div>
-            <div className="flex flex-wrap gap-3 justify-center">
-              {BROCHURES.map((b) => (
-                <a
-                  key={b.id}
-                  href={`/brochures/${encodeURIComponent(b.filename)}`}
-                  download
-                  className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-primary shadow-sm transition hover:bg-primary/5"
-                >
-                  {b.title}
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
