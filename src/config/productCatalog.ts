@@ -33,7 +33,7 @@ export const PRODUCT_CATALOG: ProductCategory[] = [
         slug: 'compact-non-pressure',
         title: 'Compact Non-Pressure',
         shortDescription: 'Efficient non-pressurized system for basic hot water needs',
-        image: '/lovable-uploads/fa574ee8-f575-4238-aa13-e2b4a0bd6425.png',
+        image: '/lovable-uploads/5975e5c4-eb5e-4d0b-8b70-b2b9a88fbc6d.png',
         alt: 'Compact non-pressure solar water heater system',
         specs: [
           { label: 'Capacity', value: '150-300L' },
@@ -57,7 +57,7 @@ export const PRODUCT_CATALOG: ProductCategory[] = [
         slug: 'compact-pressurized-heat-pipe',
         title: 'Compact Pressurized Heat Pipe',
         shortDescription: 'Advanced heat pipe technology with pressurized tank',
-        image: '/lovable-uploads/1ab8907a-e014-4416-ba4b-2f7217002d9a.png',
+        image: '/lovable-uploads/62b1740b-613a-4a2c-9b1a-479e27898872.png',
         alt: 'Compact pressurized heat pipe solar water heater',
         specs: [
           { label: 'Capacity', value: '200-500L' },
@@ -78,12 +78,12 @@ export const PRODUCT_CATALOG: ProductCategory[] = [
         ]
       },
       {
-        id: 'preheated-tank',
-        slug: 'preheated-tank',
-        title: 'Preheated Tank',
-        shortDescription: 'Intelligent preheating system with backup heating',
-        image: '/lovable-uploads/2383ed8e-d178-4154-91e7-ea0776ce6b6a.png',
-        alt: 'Preheated tank solar water heater system',
+        id: 'solar-collector-heat',
+        slug: 'solar-collector-heat',
+        title: 'Solar Collector Heat',
+        shortDescription: 'High-efficiency solar collector system for optimal heating',
+        image: '/lovable-uploads/37e633a1-38c7-43d1-b210-8f53587f74af.png',
+        alt: 'Solar collector heat water heater system',
         specs: [
           { label: 'Capacity', value: '300-1000L' },
           { label: 'Backup Heating', value: 'Electric/Gas' },
