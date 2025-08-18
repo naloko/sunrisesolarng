@@ -11,22 +11,22 @@ const ProductsSection = () => {
     image: "/lovable-uploads/f2040cb6-fe47-4ec1-b256-ef31c13cd1c8.png",
     titleKey: "products.heater.title",
     descriptionKey: "products.heater.description",
-    link: "/products/solar-water-heater"
+    link: "/products/solar-water-heater/compact-non-pressure"
   }, {
     image: "/lovable-uploads/be0620a9-b789-464b-b554-66d4c2376130.png",
     titleKey: "products.panel.title",
     descriptionKey: "products.panel.description",
-    link: "/products/solar-panel"
+    link: "/products"
   }, {
     image: "/lovable-uploads/425045d0-781c-4a14-a59f-41dfee50cafb.png",
     titleKey: "products.battery.title",
     descriptionKey: "products.battery.description",
-    link: "/products/energy-storage"
+    link: "/products"
   }, {
     image: "/lovable-uploads/05c1eed8-c553-48b3-ba7b-0e8d3e3bb27b.png",
     titleKey: "products.inverter.title",
     descriptionKey: "products.inverter.description",
-    link: "/products/inverter"
+    link: "/products"
   }];
   return <section className="py-16 bg-white">
       <div className="section-container">
