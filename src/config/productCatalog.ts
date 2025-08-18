@@ -80,19 +80,39 @@ export const PRODUCT_CATALOG: ProductCategory[] = [
         id: 'compact-pressurized-heat-pipe',
         slug: 'compact-pressurized-heat-pipe',
         title: 'Compact Pressurized Heat Pipe',
-        shortDescription: 'Advanced heat pipe technology with pressurized tank',
+        shortDescription: 'Integrated solar thermal systems designed to deliver pressurized hot water with heat pipe technology, ideal for residential applications.',
         image: '/lovable-uploads/62b1740b-613a-4a2c-9b1a-479e27898872.png',
         alt: 'Compact pressurized heat pipe solar water heater',
+        introduction: 'Tanso Heat Pipe Solar Water Heaters are integrated solar thermal systems designed to deliver pressurized hot water. Ideal for residential applications, they provide a sustainable, easy-to-install, high-efficiency, and reliable solar hot water solution.',
+        workingPrinciple: 'The vacuum tube absorb solar energy and convert solar energy into thermal energy, then transfer to the central heat pipe via the aluminum fin. The heat pipe have tiny amount of purified water sealed inside at depressurized condition. When heated, the water inside the heat pipes vaporizes at low temperature (about 25°C), the vapor rises to the condenser and heat energy is conducted to water (inside the tank). When vapor is cooled down, and becomes condensate, falling back to the bottom of heat pipe. By continuously circulating in this way, heat is carried from outside to the water inside the tank.',
         specs: [
-          { label: 'Capacity', value: '200-500L' },
-          { label: 'Pressure', value: '0.6-0.8 MPa' },
-          { label: 'Efficiency', value: '95%+' }
+          { label: 'Capacity', value: '100L-300L' },
+          { label: 'Maximum Working Pressure', value: '6 bar (87 psi)' },
+          { label: 'Insulation', value: '50mm High-Density Polyurethane Foam' },
+          { label: 'Vacuum Tube', value: 'Borosilicate glass 3.3, ALN/AIN-SS/CU coating' },
+          { label: 'Low Temperature Resistance', value: 'Can be used in -50°C condition' }
         ],
         features: [
-          'Heat pipe technology',
-          'Pressurized system',
-          'High efficiency',
-          'All-weather operation'
+          'Simplified Installation & Maintenance',
+          'High pressure system, directly connected with city water without booster pump',
+          'Rapid Start-up & High Efficiency: Quick system activation, excellent energy yield, and minimal heat loss',
+          'Low temperature resistance, can be used in -50°C condition',
+          'Easy to replace individual tube in the event of tube damaged',
+          '10-Year Warranty'
+        ],
+        premiumMaterials: [
+          'Vacuum tube: Borosilicate glass 3.3, ALN/AIN-SS/CU coating',
+          'Heat Pipes: High-Purity Copper',
+          'Heat Transfer Fins: Aluminum',
+          'Inner Tank: Food-Grade 304 Stainless Steel (SUS304-28) or 316L Stainless Steel',
+          'Outer Casing: 304 / 201 Stainless Steel / 430 BA Stainless Steel / Pre-painted Galvanized Steel',
+          'Insulation: 50mm High-Density Polyurethane Foam',
+          'Mounting Frame: 201 / 304 Stainless Steel / Pre-painted Galvanized Steel / Aluminum Alloy'
+        ],
+        optionalAccessories: [
+          'Electric Heating Element (Immersion Heater)',
+          'Pressure & Temperature Relief Valve (PTRV)',
+          'Magnesium Anode Rod, Non-Return, Check Valve'
         ],
         applications: [
           'Modern homes',
