@@ -40,7 +40,7 @@ const ProductDetail = () => {
       </section>
 
       {/* Product Hero */}
-      <section className="py-16 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedSection animation="slide-in-left">
@@ -54,7 +54,7 @@ const ProductDetail = () => {
             </AnimatedSection>
 
             <AnimatedSection animation="slide-in-right">
-              <div className="space-y-6">
+              <div className="space-y-4">
                 <div>
                   <span className="inline-block bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full mb-3">
                     {category.title}
@@ -74,10 +74,6 @@ const ProductDetail = () => {
                   >
                     Get Quote
                   </Link>
-                  <button className="inline-flex items-center justify-center border border-gray-300 hover:border-primary text-gray-700 hover:text-primary px-6 py-3 rounded-lg font-medium transition-colors">
-                    <Download className="w-4 h-4 mr-2" />
-                    Download Spec Sheet
-                  </button>
                 </div>
               </div>
             </AnimatedSection>
@@ -87,9 +83,9 @@ const ProductDetail = () => {
 
       {/* Introduction & Working Principle */}
       {(product.introduction || product.workingPrinciple) && (
-        <section className="py-16 bg-white">
+        <section className="py-12 bg-white">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {product.introduction && (
                 <AnimatedSection>
                   <div className="bg-gray-50 rounded-xl p-6">
@@ -113,9 +109,9 @@ const ProductDetail = () => {
       )}
 
       {/* Product Details */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6">
             
             {/* Specifications */}
             {product.specs && product.specs.length > 0 && (
@@ -187,7 +183,7 @@ const ProductDetail = () => {
 
           {/* Applications */}
           {product.applications && product.applications.length > 0 && (
-            <div className="mt-8">
+            <div className="mt-6">
               <AnimatedSection>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
                   <h2 className="text-xl font-semibold text-gray-900 mb-4">Applications</h2>
@@ -207,7 +203,7 @@ const ProductDetail = () => {
       </section>
 
       {/* Back to Products */}
-      <section className="py-12 bg-white">
+      <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <Link
