@@ -89,7 +89,7 @@ export const PRODUCT_CATALOG: ProductCategory[] = [
           { label: 'Capacity', value: '100L-300L' },
           { label: 'Maximum Working Pressure', value: '6 bar (87 psi)' },
           { label: 'Insulation', value: '50mm High-Density Polyurethane Foam' },
-          { label: 'Vacuum Tube', value: 'Borosilicate glass 3.3, ALN/AIN-SS/CU coating' },
+          { label: 'Vacuum Tube', value: 'Borosilicate glass 3.3, ALN/AIN-SS/CU coating, Ф58x1800mm' },
           { label: 'Low Temperature Resistance', value: 'Can be used in -50°C condition' }
         ],
         features: [
@@ -101,7 +101,7 @@ export const PRODUCT_CATALOG: ProductCategory[] = [
           '10-Year Warranty'
         ],
         premiumMaterials: [
-          'Vacuum tube: Borosilicate glass 3.3, ALN/AIN-SS/CU coating',
+          'Vacuum tube: Borosilicate glass 3.3, ALN/AIN-SS/CU coating, Ф58x1800mm',
           'Heat Pipes: High-Purity Copper',
           'Heat Transfer Fins: Aluminum',
           'Inner Tank: Food-Grade 304 Stainless Steel (SUS304-28) or 316L Stainless Steel',
