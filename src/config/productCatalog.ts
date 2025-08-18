@@ -17,6 +17,7 @@ export interface Product {
   workingPrinciple?: string;
   premiumMaterials?: string[];
   optionalAccessories?: string[];
+  aliases?: string[];
 }
 
 export interface ProductCategory {
@@ -122,28 +123,55 @@ export const PRODUCT_CATALOG: ProductCategory[] = [
         ]
       },
       {
-        id: 'solar-collector-heat',
-        slug: 'solar-collector-heat',
-        title: 'Solar Collector Heat',
-        shortDescription: 'High-efficiency solar collector system for optimal heating',
+        id: 'heat-pipe-solar-collector',
+        slug: 'heat-pipe-solar-collector',
+        title: 'Heat Pipe Solar Collector',
+        shortDescription: 'Heat pipe solar thermal collectors for room heating, commercial water heating systems, and domestic applications with superior efficiency.',
         image: '/lovable-uploads/37e633a1-38c7-43d1-b210-8f53587f74af.png',
-        alt: 'Solar collector heat water heater system',
+        alt: 'Heat pipe solar collector water heater system',
+        aliases: ['solar-collector-heat'],
+        introduction: 'Heat Pipe Solar Collector systems are always connected with existing water heating devices. Perfect for room heating, large scale commercial solar water heating systems, domestic water heating, and old heating equipment/system retrofit.',
+        workingPrinciple: 'The selective absorber coating on the inner cover of vacuum tubes absorb solar energy, then convert solar energy into thermal energy and transfer thermal energy to heat pipe by aluminum fin. The heated liquid inside heat pipe change into vapor which rises to the top condenser, then thermal energy heat transfer liquid pass through heat exchanger and the cooled vapor becomes liquid, returning to the base of heat pipe.',
         specs: [
-          { label: 'Capacity', value: '300-1000L' },
-          { label: 'Backup Heating', value: 'Electric/Gas' },
-          { label: 'Insulation', value: 'High-density foam' }
+          { label: 'Efficiency', value: 'η₀ = 0.638 (aperture area)' },
+          { label: 'Working Pressure', value: '0.6MPa' },
+          { label: 'Max. Working Pressure', value: '1.2MPa' },
+          { label: 'Ambient Temperature', value: '>=-50°C' },
+          { label: 'Vacuum Tube', value: 'Borosilicate glass 3.3, ALN/AIN-SS/CU coating, Ф58x1800mm' },
+          { label: 'Heat Pipe Condenser', value: 'Ф14mm red copper' },
+          { label: 'Heat Pipe', value: 'Ф8mm red copper' },
+          { label: 'Inlet/Outlet', value: 'Ф22mm (3/4 and 1 inch)' }
         ],
         features: [
-          'Intelligent control',
-          'Backup heating',
-          'Large capacity',
-          'Energy saving mode'
+          'Higher efficiency η₀ = 0.638 (aperture area)',
+          'Low temperature resistance, heat pipe freeze protected, even can work under -50°C ambient, so can be used all year round in cold climate area',
+          'No water inside vacuum tube, so vacuum tube will not break in the winter frozen weather',
+          'In the event of a tube damaged, the whole system will still keep working, just remove and replace, low cost',
+          'Combined with building perfectly, ideal for slope roof or flat roof installation',
+          'It can be combined with existing water heating device easily',
+          'Tube can be replaced without draining solar fluid',
+          'Significant advantages over flat plate',
+          'Low maintenance'
+        ],
+        premiumMaterials: [
+          'Vacuum tube: Borosilicate glass 3.3, ALN/AIN-SS/CU coating, Ф58x1800mm',
+          'Heat pipe condenser: Ф14mm red copper',
+          'Heat pipe: Ф8mm red copper',
+          'Heat transfer fin: Integrated aluminum fin',
+          'Manifold casing: Aluminium alloy 6063-TS',
+          'Main tube: Ф27*1mm; Risers: @16*1mm',
+          'Inlet/outlet: Ф22mm (3/4 and 1inch)',
+          'Insulation layer: Polyurythan+Infrared reflective film+Glass Wool',
+          'Frame: Aluminium alloy',
+          'Working pressure: 0.6MPa',
+          'Max. working pressure: 1.2MPa',
+          'Ambient temperature: >=-50°C'
         ],
         applications: [
-          'Large households',
-          'Commercial buildings',
-          'Industrial facilities',
-          'Hospitals'
+          'Room heating',
+          'Large scale commercial solar water heating system',
+          'Domestic water heating',
+          'Old heating equipment/system retrofit'
         ]
       }
     ]

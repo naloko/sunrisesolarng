@@ -8,7 +8,19 @@ const ProductDetail = () => {
   const { categorySlug, productSlug } = useParams();
 
   const category = PRODUCT_CATALOG.find(cat => cat.slug === categorySlug);
-  const product = category?.products.find(prod => prod.slug === productSlug);
+  let product = category?.products.find(prod => prod.slug === productSlug);
+  
+  // Check for aliases if product not found by slug
+  if (!product && category) {
+    product = category.products.find(prod => 
+      prod.aliases?.includes(productSlug || '')
+    );
+    
+    // If found by alias, redirect to the canonical URL
+    if (product) {
+      return <Navigate to={`/products/${categorySlug}/${product.slug}`} replace />;
+    }
+  }
 
   if (!category || !product) {
     return <Navigate to="/products" replace />;
