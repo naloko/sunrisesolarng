@@ -8,6 +8,11 @@ const ProductsSection = () => {
     t
   } = useTranslation();
   const products = [{
+    image: "/lovable-uploads/f2040cb6-fe47-4ec1-b256-ef31c13cd1c8.png",
+    titleKey: "products.heater.title",
+    descriptionKey: "products.heater.description",
+    link: "/products/solar-water-heater"
+  }, {
     image: "/lovable-uploads/be0620a9-b789-464b-b554-66d4c2376130.png",
     titleKey: "products.panel.title",
     descriptionKey: "products.panel.description",
@@ -22,11 +27,6 @@ const ProductsSection = () => {
     titleKey: "products.inverter.title",
     descriptionKey: "products.inverter.description",
     link: "/products/inverter"
-  }, {
-    image: "/lovable-uploads/1ab8907a-e014-4416-ba4b-2f7217002d9a.png",
-    titleKey: "products.heater.title",
-    descriptionKey: "products.heater.description",
-    link: "/products/solar-water-heater"
   }];
   return <section className="py-16 bg-white">
       <div className="section-container">
