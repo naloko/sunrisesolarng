@@ -8,7 +8,7 @@ const ProductsSection = () => {
     t
   } = useTranslation();
   const products = [{
-    image: "/lovable-uploads/f2040cb6-fe47-4ec1-b256-ef31c13cd1c8.png",
+    image: "/lovable-uploads/144dec19-9c29-4071-bb7b-5e52c6122b38.png",
     titleKey: "products.heater.title",
     descriptionKey: "products.heater.description",
     link: "/products/solar-water-heater/compact-non-pressure"
