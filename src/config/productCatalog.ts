@@ -13,6 +13,10 @@ export interface Product {
   specs?: ProductSpec[];
   features?: string[];
   applications?: string[];
+  introduction?: string;
+  workingPrinciple?: string;
+  premiumMaterials?: string[];
+  optionalAccessories?: string[];
 }
 
 export interface ProductCategory {
@@ -32,24 +36,44 @@ export const PRODUCT_CATALOG: ProductCategory[] = [
         id: 'compact-non-pressure',
         slug: 'compact-non-pressure',
         title: 'Compact Non-Pressure',
-        shortDescription: 'Efficient non-pressurized system for basic hot water needs',
+        shortDescription: 'The most cost-effective and environmentally friendly way to harness solar energy for hot water applications, available with 50-500L tank.',
         image: '/lovable-uploads/5975e5c4-eb5e-4d0b-8b70-b2b9a88fbc6d.png',
         alt: 'Compact non-pressure solar water heater system',
+        introduction: 'The Non pressure galvanized solar water heater is the most cost-effectiveness and environmentally friendly way to harness solar energy for hot water applications, which is unsurpassed by any other solar thermal products, for its most high efficiency, low cost and easy installation.',
+        workingPrinciple: 'Using thermosiphon system - depending on the different density of hot water and cold water, a water flowing cycle is created in tubes, hot water raising up automatically and the cold water flowing in the bottom, we call it as the gravity system too.',
         specs: [
-          { label: 'Capacity', value: '150-300L' },
-          { label: 'Pressure', value: 'Non-pressurized' },
-          { label: 'Material', value: 'Stainless steel' }
+          { label: 'Capacity', value: '50L-500L' },
+          { label: 'Inner Tank', value: 'Stainless steel SS304-2B / SS316L' },
+          { label: 'Outer Tank', value: 'Galvanized steel /SS304/SS201' },
+          { label: 'Insulation', value: 'Polyurethane foam, 41 kg/m³ high density' },
+          { label: 'Support', value: 'Painted galvanized steel' },
+          { label: 'Vacuum Tube', value: 'Borosilicate glass 3.3, ALN/AIN-SS/CU coating, Ф58x1800mm' }
         ],
         features: [
-          'Cost-effective solution',
-          'Easy installation',
-          'Low maintenance',
-          'Gravity-fed system'
+          'Adopt most economic material (outer tank and support)',
+          'Most reliable, cost saving, efficient hot water heating solution',
+          'Simple structure, easy installation, labor cost saving',
+          'Automatic operation with intelligent controller',
+          'Low maintenance cost'
+        ],
+        premiumMaterials: [
+          'Inner tank: Stainless steel SS304-2B / SS316L',
+          'Outer tank: Galvanized steel /SS304/SS201',
+          'Insulation layer: Polyurethane foam, 41 kg/m³ high density',
+          'Support: Painted galvanized steel',
+          'Vacuum tube: Borosilicate glass 3.3, ALN/AIN-SS/CU coating, Ф58x1800mm',
+          'Capacity: 50L-500L'
+        ],
+        optionalAccessories: [
+          'Electric Heating Element (1.5/2.0 kW)',
+          'Smart Controller with temperature display',
+          'Magnesium Anode Rod (extends tank life)'
         ],
         applications: [
           'Residential homes',
           'Small businesses',
-          'Rural areas'
+          'Rural areas',
+          'Cost-conscious installations'
         ]
       },
       {

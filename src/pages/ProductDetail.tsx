@@ -85,10 +85,37 @@ const ProductDetail = () => {
         </div>
       </section>
 
+      {/* Introduction & Working Principle */}
+      {(product.introduction || product.workingPrinciple) && (
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {product.introduction && (
+                <AnimatedSection>
+                  <div className="bg-gray-50 rounded-xl p-6">
+                    <h2 className="text-xl font-semibold text-gray-900 mb-4">Introduction</h2>
+                    <p className="text-gray-700 leading-relaxed">{product.introduction}</p>
+                  </div>
+                </AnimatedSection>
+              )}
+              
+              {product.workingPrinciple && (
+                <AnimatedSection>
+                  <div className="bg-gray-50 rounded-xl p-6">
+                    <h2 className="text-xl font-semibold text-gray-900 mb-4">Working Principle</h2>
+                    <p className="text-gray-700 leading-relaxed">{product.workingPrinciple}</p>
+                  </div>
+                </AnimatedSection>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Product Details */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
             
             {/* Specifications */}
             {product.specs && product.specs.length > 0 && (
@@ -97,9 +124,9 @@ const ProductDetail = () => {
                   <h2 className="text-xl font-semibold text-gray-900 mb-4">Specifications</h2>
                   <div className="space-y-3">
                     {product.specs.map((spec, index) => (
-                      <div key={index} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-0">
-                        <span className="text-gray-600">{spec.label}</span>
-                        <span className="font-medium text-gray-900">{spec.value}</span>
+                      <div key={index} className="py-2 border-b border-gray-100 last:border-0">
+                        <div className="text-sm text-gray-600 mb-1">{spec.label}</div>
+                        <div className="font-medium text-gray-900 text-sm">{spec.value}</div>
                       </div>
                     ))}
                   </div>
@@ -111,12 +138,12 @@ const ProductDetail = () => {
             {product.features && product.features.length > 0 && (
               <AnimatedSection>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-4">Key Features</h2>
+                  <h2 className="text-xl font-semibold text-gray-900 mb-4">Characteristics</h2>
                   <ul className="space-y-3">
                     {product.features.map((feature, index) => (
                       <li key={index} className="flex items-start">
-                        <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
+                        <Check className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700 text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -124,16 +151,32 @@ const ProductDetail = () => {
               </AnimatedSection>
             )}
 
-            {/* Applications */}
-            {product.applications && product.applications.length > 0 && (
+            {/* Premium Materials */}
+            {product.premiumMaterials && product.premiumMaterials.length > 0 && (
               <AnimatedSection>
                 <div className="bg-white rounded-xl p-6 shadow-sm">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-4">Applications</h2>
+                  <h2 className="text-xl font-semibold text-gray-900 mb-4">Premium Materials</h2>
+                  <ul className="space-y-2">
+                    {product.premiumMaterials.map((material, index) => (
+                      <li key={index} className="text-gray-700 text-sm leading-relaxed">
+                        {material}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </AnimatedSection>
+            )}
+
+            {/* Optional Accessories */}
+            {product.optionalAccessories && product.optionalAccessories.length > 0 && (
+              <AnimatedSection>
+                <div className="bg-white rounded-xl p-6 shadow-sm">
+                  <h2 className="text-xl font-semibold text-gray-900 mb-4">Optional Accessories</h2>
                   <ul className="space-y-3">
-                    {product.applications.map((application, index) => (
+                    {product.optionalAccessories.map((accessory, index) => (
                       <li key={index} className="flex items-start">
-                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2.5 flex-shrink-0"></div>
-                        <span className="text-gray-700">{application}</span>
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <span className="text-gray-700 text-sm">{accessory}</span>
                       </li>
                     ))}
                   </ul>
@@ -141,6 +184,25 @@ const ProductDetail = () => {
               </AnimatedSection>
             )}
           </div>
+
+          {/* Applications */}
+          {product.applications && product.applications.length > 0 && (
+            <div className="mt-8">
+              <AnimatedSection>
+                <div className="bg-white rounded-xl p-6 shadow-sm">
+                  <h2 className="text-xl font-semibold text-gray-900 mb-4">Applications</h2>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {product.applications.map((application, index) => (
+                      <div key={index} className="flex items-center">
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
+                        <span className="text-gray-700 text-sm">{application}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
+          )}
         </div>
       </section>
 
