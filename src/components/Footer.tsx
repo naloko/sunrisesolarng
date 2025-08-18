@@ -9,10 +9,10 @@ import {
   Instagram, 
   Twitter, 
   Linkedin, 
-  Sun, 
   ArrowRight,
   Clock
 } from 'lucide-react';
+import ProcessedLogo from './ProcessedLogo';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Sun className="h-8 w-8 text-primary" aria-hidden="true" />
+              <ProcessedLogo src="/lovable-uploads/f4673dff-58c3-4f1e-8a9e-54618abf63f1.png" alt="Sunrise Solar logo" className="h-8 w-auto" />
               <span className="text-xl font-bold">SUNRISE</span>
             </div>
             <p className="text-gray-400 text-sm">
