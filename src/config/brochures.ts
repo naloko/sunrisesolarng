@@ -20,6 +20,12 @@ export const BROCHURES: Brochure[] = [
     lang: "EN",
   },
   {
+    id: "sunrise-pv-ess",
+    title: "Sunrise PV & ESS Solutions",
+    filename: "Sunrise PV & ESS Solutions.pdf",
+    lang: "EN",
+  },
+  {
     id: "solar-water-heater",
     title: "Solar Water Heater Brochure",
     filename: "solar water heater.pdf",

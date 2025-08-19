@@ -90,15 +90,27 @@ const ProductsByCategoryRow = ({ category }: ProductsByCategoryRowProps) => {
         {category.slug === 'high-voltage-energy-storage' && (
           <AnimatedSection animation="slide-up">
             <div className="mt-8 text-center">
-              <a
-                href="/brochures/sunrise.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => {
+                  // Download Sunrise PV & ESS Solutions
+                  const link1 = document.createElement('a');
+                  link1.href = '/brochures/Sunrise PV & ESS Solutions.pdf';
+                  link1.download = 'Sunrise PV & ESS Solutions.pdf';
+                  link1.click();
+                  
+                  // Download Solar Water Heater brochure
+                  setTimeout(() => {
+                    const link2 = document.createElement('a');
+                    link2.href = '/brochures/solar water heater.pdf';
+                    link2.download = 'solar water heater.pdf';
+                    link2.click();
+                  }, 100);
+                }}
                 className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium transition-colors"
               >
                 <Download className="w-5 h-5 mr-2" />
-                Download Product Brochure
-              </a>
+                Download Product Brochures
+              </button>
             </div>
           </AnimatedSection>
         )}
