@@ -282,5 +282,134 @@ export const PRODUCT_CATALOG: ProductCategory[] = [
         ]
       }
     ]
+  },
+  {
+    id: 'high-voltage-energy-storage',
+    title: 'High Voltage Energy Storage',
+    slug: 'high-voltage-energy-storage',
+    products: [
+      {
+        id: 'ts-hv280r',
+        slug: 'ts-hv280r',
+        title: 'Rack Module High voltage ESS TS-HV280R',
+        shortDescription: 'Smaller footprint, higher energy density LFP technology with expandable module design. Maximum 5.12kWh per module with 12S×10P configuration.',
+        image: '/lovable-uploads/54c8ad97-76a2-45ca-a2c4-ca58b282e0d5.png',
+        alt: 'Rack Module High voltage ESS TS-HV280R battery storage system',
+        introduction: 'The TS-HV280R Rack Module High voltage ESS combines advanced LFP technology with modular design for maximum flexibility and efficiency. This system offers superior energy density in a compact footprint.',
+        workingPrinciple: 'The system utilizes advanced lithium iron phosphate (LFP) battery technology in a modular rack configuration. Each module provides 5.12kWh capacity and can be expanded up to 12S×10P configuration for scalable energy storage solutions.',
+        specs: [
+          { label: 'Model', value: 'TS-HV280R' },
+          { label: 'Module Capacity', value: '5.12kWh' },
+          { label: 'Configuration', value: '12S×10P' },
+          { label: 'Technology', value: 'Latest LFP (Lithium Iron Phosphate)' },
+          { label: 'Design', value: 'Expandable Module Design' },
+          { label: 'Monitoring', value: 'Real-time charging/discharging monitoring' }
+        ],
+        features: [
+          'Smaller footprint design',
+          'Higher energy density benefit from latest LFP technology',
+          'Expandable module design',
+          'Maximum 5.12kWh per module with 12S×10P configuration',
+          'Real-time monitoring of battery charging and discharging',
+          'Online system updates and maintenance',
+          'Cell balance protection',
+          'Over charge protection',
+          'Over current protection',
+          'Voltage protection',
+          'Over discharge protection',
+          'Short-circuit protection',
+          'Temperature protection',
+          'Soft start function'
+        ],
+        applications: [
+          'Residential energy storage',
+          'Commercial energy storage',
+          'Grid-tied systems',
+          'Backup power applications'
+        ]
+      },
+      {
+        id: 'all-in-one-hybrid-ess',
+        slug: 'all-in-one-hybrid-ess',
+        title: 'All-in-one Hybrid Energy Storage System',
+        shortDescription: 'Air cooling energy storage system for various scenarios including big villas, charging stations, supermarkets, farms and factories with microgrid capabilities.',
+        image: '/lovable-uploads/1b14f18d-10fb-41b8-80e2-15421e44d07d.png',
+        alt: 'All-in-one Hybrid Energy Storage System with air cooling',
+        introduction: 'The All-in-one air cooling energy storage system is designed for various scenarios like big villa, charging stations, supermarkets, farms and factories. This system supports various application modes such as self-consumption, time-of-use, and backup mode, alongside flexible load control.',
+        workingPrinciple: 'By seamlessly integrating with diesel generators to build microgrids, it ensures flexibility, enhanced efficiency, safety, and profitability in any setting. The system combines EMS, hybrid inverter and BMS integration technology with power supply redundancy design.',
+        specs: [
+          { label: 'System Type', value: 'All-in-one Hybrid' },
+          { label: 'Cooling', value: 'Air Cooling System' },
+          { label: 'Application Modes', value: 'Self-consumption, Time-of-use, Backup mode' },
+          { label: 'Integration', value: 'EMS, Hybrid Inverter, BMS' },
+          { label: 'Scalability', value: 'Expandable to megawatts' },
+          { label: 'Fire Suppression', value: 'Aerosol fire suppression solutions' }
+        ],
+        features: [
+          'Overall solar + storage solution',
+          'EMS, hybrid inverter and BMS integration technology',
+          'Power supply redundancy design',
+          'Support for black start function and off-grid operation',
+          'Lithium iron phosphate batteries with aerosol fire suppression',
+          'Combustible gas, smoke and temperature detection',
+          'Active exhaust system',
+          'Fire alarm system',
+          'Flexible extension capacity expandable to megawatts',
+          'Convenient outdoor setup',
+          'Minimalist O&M (Operation & Maintenance)',
+          'Intelligent and efficient operation',
+          'Seamless diesel generator integration for microgrids'
+        ],
+        applications: [
+          'Big villas',
+          'Charging stations',
+          'Supermarkets',
+          'Farms',
+          'Factories',
+          'Commercial facilities',
+          'Microgrid applications'
+        ]
+      },
+      {
+        id: 'ts-hv100s',
+        slug: 'ts-hv100s',
+        title: 'High Voltage Stacked Residential ESS TS-HV100S',
+        shortDescription: 'Compact residential energy storage with higher energy density LFP technology, expandable module design up to 5.12kWh with real-time monitoring.',
+        image: '/lovable-uploads/f43e342f-49b1-4bb5-8a17-282cd3407b2c.png',
+        alt: 'High Voltage Stacked Residential ESS TS-HV100S battery system',
+        introduction: 'The TS-HV100S High Voltage Stacked Residential ESS is designed specifically for residential applications, offering compact design with maximum energy efficiency and comprehensive safety features.',
+        workingPrinciple: 'Utilizing advanced LFP technology in a stacked configuration, the system provides optimal energy storage for residential use with intelligent monitoring and protection systems ensuring safe and efficient operation.',
+        specs: [
+          { label: 'Model', value: 'TS-HV100S' },
+          { label: 'Module Capacity', value: '5.12kWh' },
+          { label: 'Configuration', value: '12S×10P' },
+          { label: 'Technology', value: 'Latest LFP (Lithium Iron Phosphate)' },
+          { label: 'Design', value: 'Stacked Residential ESS' },
+          { label: 'Monitoring', value: 'Real-time charging/discharging monitoring' }
+        ],
+        features: [
+          'Smaller footprint for residential use',
+          'Higher energy density benefit from latest LFP technology',
+          'Expandable module design',
+          'Maximum 5.12kWh per module with 12S×10P configuration',
+          'Real-time monitoring of battery charging and discharging',
+          'Online system updates and maintenance',
+          'Cell balance protection',
+          'Over charge protection',
+          'Over current protection',
+          'Voltage protection',
+          'Over discharge protection',
+          'Short-circuit protection',
+          'Temperature protection',
+          'Soft start function'
+        ],
+        applications: [
+          'Residential homes',
+          'Small commercial buildings',
+          'Backup power systems',
+          'Solar energy storage'
+        ]
+      }
+    ]
   }
 ];
