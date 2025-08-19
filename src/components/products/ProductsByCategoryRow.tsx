@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Download } from 'lucide-react';
 import AnimatedSection from '@/components/AnimatedSection';
 import { ProductCategory } from '@/config/productCatalog';
+import { BROCHURES } from '@/config/brochures';
 import { prefetchRoute } from '@/lib/prefetchRoutes';
 
 interface ProductsByCategoryRowProps {
@@ -58,9 +59,26 @@ const ProductsByCategoryRow = ({ category }: ProductsByCategoryRowProps) => {
                       ))}
                     </div>
                   )}
-                  <div className="flex items-center text-primary font-medium text-sm">
-                    View Details
-                    <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center text-primary font-medium text-sm">
+                      View Details
+                      <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+                    </div>
+                    {product.brochureId && (() => {
+                      const brochure = BROCHURES.find(b => b.id === product.brochureId);
+                      return brochure ? (
+                        <a
+                          href={`/brochures/${brochure.filename}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex items-center text-gray-600 hover:text-primary text-sm font-medium transition-colors"
+                          title="Download Brochure"
+                        >
+                          <Download className="w-4 h-4" />
+                        </a>
+                      ) : null;
+                    })()}
                   </div>
                 </div>
               </Link>

@@ -18,6 +18,7 @@ export interface Product {
   premiumMaterials?: string[];
   optionalAccessories?: string[];
   aliases?: string[];
+  brochureId?: string;
 }
 
 export interface ProductCategory {
@@ -75,7 +76,8 @@ export const PRODUCT_CATALOG: ProductCategory[] = [
           'Small businesses',
           'Rural areas',
           'Cost-conscious installations'
-        ]
+        ],
+        brochureId: 'solar-water-heater'
       },
       {
         id: 'compact-pressurized-heat-pipe',

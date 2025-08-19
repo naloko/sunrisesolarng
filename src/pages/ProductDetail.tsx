@@ -1,6 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft, Check, Download } from 'lucide-react';
 import { PRODUCT_CATALOG } from '@/config/productCatalog';
+import { BROCHURES } from '@/config/brochures';
 import SEO from '@/components/SEO';
 import AnimatedSection from '@/components/AnimatedSection';
 
@@ -86,6 +87,20 @@ const ProductDetail = () => {
                   >
                     Get Quote
                   </Link>
+                  {product.brochureId && (() => {
+                    const brochure = BROCHURES.find(b => b.id === product.brochureId);
+                    return brochure ? (
+                      <a
+                        href={`/brochures/${brochure.filename}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center bg-white hover:bg-gray-50 text-primary border border-primary px-6 py-3 rounded-lg font-medium transition-colors"
+                      >
+                        <Download className="w-4 h-4 mr-2" />
+                        Download Product Brochure
+                      </a>
+                    ) : null;
+                  })()}
                 </div>
               </div>
             </AnimatedSection>
