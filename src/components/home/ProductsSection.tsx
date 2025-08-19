@@ -7,26 +7,28 @@ const ProductsSection = () => {
   const {
     t
   } = useTranslation();
-  const products = [{
+  const solarWaterHeaters = [{
     image: "/lovable-uploads/62bfdc70-0d42-4629-a77e-1cce0abacee9.png",
     titleKey: "products.heater.title",
     descriptionKey: "products.heater.description",
     link: "/products/solar-water-heater/compact-non-pressure"
+  }];
+
+  const batteryProducts = [{
+    image: "/lovable-uploads/96506ab6-7564-4dea-b1cb-385e84b56d19.png",
+    titleKey: "products.inverter1.title",
+    descriptionKey: "products.inverter1.description",
+    link: "/products/low-voltage-battery/s6-eh1p-3-8k-l-plus"
   }, {
-    image: "/lovable-uploads/be0620a9-b789-464b-b554-66d4c2376130.png",
-    titleKey: "products.panel.title",
-    descriptionKey: "products.panel.description",
-    link: "/products"
+    image: "/lovable-uploads/ae9a6e51-a5ee-4b46-8fe7-825163e436dd.png",
+    titleKey: "products.inverter2.title",
+    descriptionKey: "products.inverter2.description",
+    link: "/products/low-voltage-battery/s6-eh1p-12-16k-nv-yd-l"
   }, {
-    image: "/lovable-uploads/425045d0-781c-4a14-a59f-41dfee50cafb.png",
-    titleKey: "products.battery.title",
-    descriptionKey: "products.battery.description",
-    link: "/products"
-  }, {
-    image: "/lovable-uploads/05c1eed8-c553-48b3-ba7b-0e8d3e3bb27b.png",
-    titleKey: "products.inverter.title",
-    descriptionKey: "products.inverter.description",
-    link: "/products"
+    image: "/lovable-uploads/e2fdb118-678b-4f55-a414-f4b57bed1112.png",
+    titleKey: "products.inverter3.title",
+    descriptionKey: "products.inverter3.description",
+    link: "/products/low-voltage-battery/s6-eh3p-8-15k-nv-yd-l"
   }];
   return <section className="py-16 bg-white">
       <div className="section-container">
@@ -42,10 +44,40 @@ const ProductsSection = () => {
           </AnimatedSection>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
-          {products.map((product, index) => <AnimatedSection key={index} animation="slide-up" delay={(index + 1) * 100}>
+        {/* Solar Water Heater Section */}
+        <AnimatedSection animation="fade-in" delay={200} className="mb-16">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Solar Water Heater</h3>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Efficient solar thermal systems that use sunlight to heat water for residential and commercial use.
+            </p>
+          </div>
+        </AnimatedSection>
+
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 mb-16 max-w-md mx-auto">
+          {solarWaterHeaters.map((product, index) => (
+            <AnimatedSection key={index} animation="slide-up" delay={300 + index * 100}>
               <ProductCard image={product.image} titleKey={product.titleKey} descriptionKey={product.descriptionKey} link={product.link} />
-            </AnimatedSection>)}
+            </AnimatedSection>
+          ))}
+        </div>
+
+        {/* Low Voltage Battery Section */}
+        <AnimatedSection animation="fade-in" delay={400} className="mb-8">
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Low Voltage Energy Storage Inverters</h3>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Advanced energy storage solutions with generator compatibility, microgrid formation, and superior power management capabilities.
+            </p>
+          </div>
+        </AnimatedSection>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {batteryProducts.map((product, index) => (
+            <AnimatedSection key={`battery-${index}`} animation="slide-up" delay={500 + index * 100}>
+              <ProductCard image={product.image} titleKey={product.titleKey} descriptionKey={product.descriptionKey} link={product.link} />
+            </AnimatedSection>
+          ))}
         </div>
 
         <div className="text-center mt-12">

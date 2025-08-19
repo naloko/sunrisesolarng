@@ -148,6 +148,18 @@
     "heater": {
       "title": "Solar Water Heater",
       "description": "Efficient solar thermal systems that use sunlight to heat water for residential and commercial use."
+    },
+    "inverter1": {
+      "title": "Single Phase S6-EH1P (3-8)K-L-PLUS",
+      "description": "New PLUS model with generator compatibility and microgrid formation for demanding power scenarios."
+    },
+    "inverter2": {
+      "title": "Single Phase S6-EH1P (12-16)K03-NV-YD-L", 
+      "description": "High-power single phase inverter with 20A input current, ideal for high-power PV modules."
+    },
+    "inverter3": {
+      "title": "Three Phase S6-EH3P (8-15)K02-NV-YD-L",
+      "description": "Three-phase inverter supporting unbalanced loads with 290A battery current capability."
     }
   },
   "projects": {

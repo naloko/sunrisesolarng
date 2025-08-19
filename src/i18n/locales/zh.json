@@ -147,6 +147,18 @@
     "heater": {
       "title": "太阳能热水器",
       "description": "高效的太阳能热水系统，利用阳光为住宅和商业用途加热水。"
+    },
+    "inverter1": {
+      "title": "单相S6-EH1P (3-8)K-L-PLUS",
+      "description": "新PLUS型号，具备发电机兼容性和微电网形成功能，适用于高要求电力场景。"
+    },
+    "inverter2": {
+      "title": "单相S6-EH1P (12-16)K03-NV-YD-L",
+      "description": "大功率单相逆变器，20A输入电流，适用于所有大功率光伏组件。"
+    },
+    "inverter3": {
+      "title": "三相S6-EH3P (8-15)K02-NV-YD-L", 
+      "description": "三相逆变器，支持不平衡负载，电池电流可达290A。"
     }
   },
   "projects": {
