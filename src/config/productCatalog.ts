@@ -127,7 +127,7 @@ export const PRODUCT_CATALOG: ProductCategory[] = [
         slug: 'heat-pipe-solar-collector',
         title: 'Heat Pipe Solar Collector',
         shortDescription: 'Heat pipe solar thermal collectors for room heating, commercial water heating systems, and domestic applications with superior efficiency.',
-        image: '/lovable-uploads/37e633a1-38c7-43d1-b210-8f53587f74af.png',
+        image: '/lovable-uploads/36c07050-4ae9-4c6f-91d2-fe9804ef8e2a.png',
         alt: 'Heat pipe solar collector water heater system',
         aliases: ['solar-collector-heat'],
         introduction: 'Heat Pipe Solar Collector systems are always connected with existing water heating devices. Perfect for room heating, large scale commercial solar water heating systems, domestic water heating, and old heating equipment/system retrofit.',
