@@ -4,32 +4,34 @@ import { useTranslation } from 'react-i18next';
 import AnimatedSection from '../AnimatedSection';
 import ProductCard from './ProductCard';
 const ProductsSection = () => {
-  const {
-    t
-  } = useTranslation();
-  const solarWaterHeaters = [{
-    image: "/lovable-uploads/62bfdc70-0d42-4629-a77e-1cce0abacee9.png",
-    titleKey: "products.heater.title",
-    descriptionKey: "products.heater.description",
-    link: "/products/solar-water-heater/compact-non-pressure"
-  }];
-
-  const batteryProducts = [{
-    image: "/lovable-uploads/96506ab6-7564-4dea-b1cb-385e84b56d19.png",
-    titleKey: "products.inverter1.title",
-    descriptionKey: "products.inverter1.description",
-    link: "/products/low-voltage-battery/s6-eh1p-3-8k-l-plus"
-  }, {
-    image: "/lovable-uploads/ae9a6e51-a5ee-4b46-8fe7-825163e436dd.png",
-    titleKey: "products.inverter2.title",
-    descriptionKey: "products.inverter2.description",
-    link: "/products/low-voltage-battery/s6-eh1p-12-16k-nv-yd-l"
-  }, {
-    image: "/lovable-uploads/e2fdb118-678b-4f55-a414-f4b57bed1112.png",
-    titleKey: "products.inverter3.title",
-    descriptionKey: "products.inverter3.description",
-    link: "/products/low-voltage-battery/s6-eh3p-8-15k-nv-yd-l"
-  }];
+  const { t } = useTranslation();
+  
+  const productCategories = [
+    {
+      image: "/lovable-uploads/62bfdc70-0d42-4629-a77e-1cce0abacee9.png",
+      titleKey: "products.heater.title",
+      descriptionKey: "products.heater.description",
+      link: "/products#solar-water-heater"
+    },
+    {
+      image: "/lovable-uploads/96506ab6-7564-4dea-b1cb-385e84b56d19.png",
+      titleKey: "products.lvInverter.title",
+      descriptionKey: "products.lvInverter.description",
+      link: "/products#low-voltage-battery"
+    },
+    {
+      image: "/lovable-uploads/54c8ad97-76a2-45ca-a2c4-ca58b282e0d5.png",
+      titleKey: "products.hvInverter.title",
+      descriptionKey: "products.hvInverter.description",
+      link: "/products#high-voltage-energy-storage"
+    },
+    {
+      image: "/lovable-uploads/be0620a9-b789-464b-b554-66d4c2376130.png",
+      titleKey: "products.panel.title",
+      descriptionKey: "products.panel.description",
+      link: "/products"
+    }
+  ];
   return <section className="py-16 bg-white">
       <div className="section-container">
         <div className="section-header">
@@ -44,38 +46,15 @@ const ProductsSection = () => {
           </AnimatedSection>
         </div>
 
-        {/* Solar Water Heater Section */}
-        <AnimatedSection animation="fade-in" delay={200} className="mb-16">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Solar Water Heater</h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Efficient solar thermal systems that use sunlight to heat water for residential and commercial use.
-            </p>
-          </div>
-        </AnimatedSection>
-
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 mb-16 max-w-md mx-auto">
-          {solarWaterHeaters.map((product, index) => (
-            <AnimatedSection key={index} animation="slide-up" delay={300 + index * 100}>
-              <ProductCard image={product.image} titleKey={product.titleKey} descriptionKey={product.descriptionKey} link={product.link} />
-            </AnimatedSection>
-          ))}
-        </div>
-
-        {/* Low Voltage Battery Section */}
-        <AnimatedSection animation="fade-in" delay={400} className="mb-8">
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Low Voltage Energy Storage Inverters</h3>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Advanced energy storage solutions with generator compatibility, microgrid formation, and superior power management capabilities.
-            </p>
-          </div>
-        </AnimatedSection>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {batteryProducts.map((product, index) => (
-            <AnimatedSection key={`battery-${index}`} animation="slide-up" delay={500 + index * 100}>
-              <ProductCard image={product.image} titleKey={product.titleKey} descriptionKey={product.descriptionKey} link={product.link} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {productCategories.map((product, index) => (
+            <AnimatedSection key={index} animation="slide-up" delay={200 + index * 100}>
+              <ProductCard 
+                image={product.image} 
+                titleKey={product.titleKey} 
+                descriptionKey={product.descriptionKey} 
+                link={product.link} 
+              />
             </AnimatedSection>
           ))}
         </div>

@@ -159,6 +159,14 @@
     "inverter3": {
       "title": "三相S6-EH3P (8-15)K02-NV-YD-L", 
       "description": "三相逆变器，支持不平衡负载，电池电流可达290A。"
+    },
+    "lvInverter": {
+      "title": "低压储能逆变器",
+      "description": "适用于住宅和轻型商业储能的可靠混合逆变器。"
+    },
+    "hvInverter": {
+      "title": "高压储能逆变器",
+      "description": "用于先进储能的可扩展高密度系统。"
     }
   },
   "projects": {

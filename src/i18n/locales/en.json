@@ -160,6 +160,14 @@
     "inverter3": {
       "title": "Three Phase S6-EH3P (8-15)K02-NV-YD-L",
       "description": "Three-phase inverter supporting unbalanced loads with 290A battery current capability."
+    },
+    "lvInverter": {
+      "title": "Low Voltage Energy Storage Inverter",
+      "description": "Reliable hybrid inverters for residential and light commercial storage."
+    },
+    "hvInverter": {
+      "title": "High Voltage Energy Storage Inverter", 
+      "description": "Scalable, high-density systems for advanced energy storage."
     }
   },
   "projects": {
